@@ -1,0 +1,18 @@
+// createRecordFile Function's PSEUDOCODE
+1. Start
+2. declare i,n as integers
+3. declare Struct ogrenci with ogrNo,derskodu and puan as integer//global
+4. declare Struct ogrenci *s
+5. read n userinput
+6. allocate memory dynamically to s 
+7. open file ("kayitlar.bin") write mode;
+8. if (file == null)
+10.   	print "error"
+11. Else
+12.    For(i=0; i<n; i++)
+13.        read ogrNo,derskodu and puan from user to struct 's'
+14.        write ogrNo, derskodu, and puan to the 'kayitlar' file
+15.    Endfor
+16.    close file "kayitlar"
+17. Endif
+18. End
